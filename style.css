@@ -1,0 +1,370 @@
+*, body {
+    margin: 0;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.main_img {
+    height: 500px;
+    width: 65vw;
+}
+
+.navBar {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    background-color: none;
+    list-style: none;
+    gap: 20px;
+    top: 40px;
+    right: 29px;
+}
+
+.headline h3 {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.headline {
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 210px;
+    align-content: center;
+    align-items: center;
+    background: transparent;
+    color: white;
+    background-color: none;
+}
+
+
+.vision {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#vision_content {
+    margin: 2rem;
+    padding: 5rem;
+    width: 80%;
+}
+
+.message1 {
+    display: flex;
+    height: 550px;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.message2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: center;
+    height: 550px;
+}
+
+
+#msg_img img {
+    width: 100%;
+}
+
+#msg_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 30px;
+    width: 85%;
+    background-color: #f5f5f5;
+}
+
+#circle_img {
+    height: 260px;
+    width: 260px;
+}
+
+.circle-root {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+
+.circile_message {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.circile_message div {
+    padding: .5rem;
+}
+
+.circile_message h3 {
+    margin: 1.5rem;
+}
+
+.reason_root {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reason_content {
+    border: 2px solid #01a0e5;
+    border-top-width: 2rem;
+    text-align: center;
+    width: 60%;
+    font-size: 18px;
+}
+
+.reason_h3 {
+    position: absolute;
+    top: 6px;
+    /* right: 580px; */
+    transform: translateX(50%, -50%);
+    color: white;
+}
+
+#reason_head {
+    margin: 20px;
+}
+
+#reason_body {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    gap: 20px;
+    text-align: left;
+}
+
+.bgSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.bgSec img {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+
+.storySuccess {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 60%;
+    gap: 20px;
+    color: white;
+    overflow: hidden;
+}
+
+.info {
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.address {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    column-gap: 3rem;
+}
+
+#addHead {
+    text-align: right;
+}
+
+#addBodySP {
+    display: flex;
+    flex-direction: column;
+    color: #01a0e5;
+}
+
+.info {
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+}
+
+.map img {
+    height: 350px;
+    width: 450px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 80px;
+    font-size: 12px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .main_img {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+    }
+
+    .navBar {
+        flex-direction: column;
+        top: 20px;
+        right: 10px;
+        gap: 10px;
+    }
+
+    .headline h3 {
+        margin-top: -20px;
+        font-size: 2rem;
+    }
+
+    .vision #vision_content {
+        width: 85vw;
+        padding: 2rem;
+        margin: 0;
+        background-color: #f5f5f5;
+    }
+
+    .message1, .message2 {
+        flex-direction: column;
+
+    }
+
+    #msg_img, #msg_content {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    #msg_content {
+        height: 500px;
+        width: 88%;
+        margin: 0;
+        line-height: 1.8;
+        overflow: hidden;
+    }
+
+    #msg_img img {
+        width: 100%;
+    }
+
+    .circile_message {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .reason_root {
+        width: 100%;
+    }
+
+    .reason_h3 {
+        position: absolute;
+        top: 6px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .reason_content {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    #reason_body {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        object-fit: cover;
+        text-align: center;
+    }
+
+    #reason_img {
+        width: 100%;
+    }
+
+    #reason_text {
+        font-size: 5px;
+        text-align: left;
+
+    }
+
+    .bgSec {
+        height: 650px;
+        overflow: hidden;
+    }
+
+    #bgSec04_img {
+        width: 450px;
+        height: 650px;
+        object-fit: cover;
+    }
+
+    .storySuccess {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        overflow: hidden;
+        color: white;
+        text-align: center;
+        width: 100%;
+        height: 600px;
+    }
+
+    .storySuccess p {
+        font-size: 0.875rem;
+        margin: .5rem;
+        line-height: 2;
+        text-align: left;
+        padding: 1.5rem;
+    }
+
+    .info {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .copyright {
+        font-size: 12px;
+        text-align: center;
+    }
+
+}
