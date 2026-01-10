@@ -128,7 +128,6 @@
 }
 
 
-
 #shape{
     background-color: #01a0e5;
     width: 60px;
@@ -143,7 +142,8 @@
 #shape_txt{
     color: white;
     margin: 0;
-    padding: 10px;}
+    padding: 10px;
+}
 
 #triangle{
     position: absolute;
@@ -167,10 +167,16 @@
 }
 
 .reason_root {
+    position: relative;
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.reason_draw{
+    position: absolute;
+    left: 5%;
 }
 
 .reason_content {
@@ -184,7 +190,7 @@
 .reason_h3 {
     position: absolute;
     top: 6px;
-    /* right: 580px; */
+
     transform: translateX(50%, -50%);
     color: white;
 }
@@ -340,7 +346,7 @@
 
      .reason_draw{
         position: absolute;
-        margin-right:880px;
+        left: -55%;
     }
 
     .reason_content {
