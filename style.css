@@ -1,6 +1,7 @@
 *, body {
     margin: 0;
     padding: 0%;
+    box-sizing: border-box;
 }
 
 .head {
@@ -58,6 +59,7 @@
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-content: center;
@@ -354,7 +356,7 @@
     }
 
     .vision #vision_content {
-        width: 85vw;
+        width: 100vw;
         padding: 2rem;
         margin: 0;
         background-color: #f5f5f5;
@@ -366,13 +368,13 @@
     }
 
     #msg_img, #msg_content {
-        width: 100%;
+        width: 100vw;
         object-fit: contain;
     }
 
     #msg_content {
         height: 500px;
-        width: 88%;
+        width: 100vw;
         margin: 0;
         line-height: 1.8;
         overflow: hidden;
